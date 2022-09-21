@@ -1,0 +1,177 @@
+*{
+   margin:0 auto;
+   padding:0;
+   box-sizing: border-box;
+}
+
+body{
+   background-color: #f4f4f4;
+}
+main{
+  
+   justify-content: center;
+   margin-top: 1.3rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+   margin-bottom: 1.3rem;
+   
+}
+
+/* input{
+width:600px;
+padding: .8rem;
+margin:auto 1.6rem;
+margin-bottom: 5px;
+} */
+input{
+  
+width:70%;
+padding: 10px;
+box-sizing: border-box;
+margin:auto;
+display: block;
+
+font-size: 16px;
+}
+
+input::placeholder{
+   text-align: left;
+   margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+a{
+   margin:auto
+}
+div.gallery{
+   margin:auto 3rem;
+  
+   display: flex;
+   flex-direction: column;
+   
+}
+
+
+.gallery img{ 
+   width:100%;
+   margin-bottom: 25px;
+   height:270px;
+   align-self: center;
+ object-fit: contain;
+   cursor:pointer;
+   
+   
+}
+
+img:hover{
+   opacity:.8
+}
+
+
+@media(min-width:768px){
+
+  main{
+     justify-content: center;
+   } 
+   input{
+      
+      margin:auto;
+      display: block;
+    
+   }
+   div.gallery{
+      min-width:900px;
+      display: flex;
+      margin:auto;
+
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+     
+   
+   }
+   div.gallery a{
+      width:35%;
+      margin:auto;
+      display: block;
+   }
+   
+   
+  .gallery img{ 
+   /* margin:15px 2rem; */
+   display: block;
+      height:200px;
+      cursor:pointer;
+      
+      /* padding: 0 3rem; */
+   }
+}
+
+
+
+@media(min-width:1024px){
+   main{
+      display: flex;
+      justify-content: center;
+      margin-top: 1.3rem;
+      margin-bottom: 1.3rem;
+      
+   }
+
+   div.gallery a{
+      width:100%;
+      margin:auto
+   }
+  
+   /* input{
+   width:600px;
+   padding: .8rem;
+   margin:auto 3rem;
+   margin-bottom: 5px;
+   } */
+   
+   input::placeholder{
+      text-align: left;
+      margin-left: 10px;
+   }
+   
+   
+   
+   
+   /*   Making a GRID */
+   
+   
+   
+   div.gallery{
+      margin:auto 3rem;
+      min-width:900px;
+      display: grid;
+      
+      grid-template-columns: 230px 230px 230px 230px;
+      grid-gap: 35px 5px;
+   
+      justify-content: center;
+   }
+   
+   
+  .gallery img{ 
+      height:200px;
+      cursor:pointer;
+      
+      /* padding: 0 3rem; */
+   }
+   
+   img:hover{
+      opacity:.9
+   }
+   
+   
+}
